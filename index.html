@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hassan Alzourei</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@latest/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+         emailjs.init("yeSRtZVsaJrUYKo5M"); // Replace with your actual public key
+     })();
+    </script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- Header secation -->
+    <header class="header">
+        <a href="#home" class="logo">Hassan <span>Alzourei</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="#home">Home</a>
+            <a href="#services" class="#services">Services</a>
+            <a href="#projects" class="#projects">Projects</a>
+            <a href="#contact" class="#contact">Contact</a>
+        </nav>
+        <a href="#contact">
+            <button class="gradient-btn">Contact Me</button>
+        </a>
+    </header>
+    <!-- Header secation //-->
+
+    <!-- Home secation -->
+    <section class="home" id="home">
+        <div class="profile-card">
+            <div>
+                <div class="home-content">
+                    <h1>Hi,  I'm <span>Hassan Alzourei</span></h1>
+                    <h3>I'm a <span>Web & App Developer</span></h3>
+                    <p>
+                        a software developer with a deep passion for creating impactful digital experiences. I specialize in application and web development, combining creativity and problem-solving to build solutions that make a difference. I’m driven by curiosity and a love for technology, always eager to learn, explore new tools, and craft user-friendly products that enhance everyday life.
+                    </p>
+                </div>
+                <br>
+                <div class="social-icons" style="text-align: center;">
+                    <a href="https://github.com/Hassan-Alzouri" target="_blank" class="icon"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/hassan-alzourei-2001b1324/" target="_blank" class="icon"><i class="bx bxl-linkedin-square"></i></a>
+                    <a href="mailto:Hassan-Alzourei@outlook.com" target="_blank" class="icon"><i class="bx bxl-gmail"></i></a>
+                </div>
+                <div class="btn-group">
+                    <a href="c:\Users\User_TMC\Downloads\Hassan-Mohammed-Alzourei-FlowCV-Resume-20250409 (2).pdf" class="btn">Download my resume</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home secation //-->
+
+
+    <!-- Services secation -->
+    <section class="services" id="services"> <!-- Corrected secation -->
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bxl-figma"></i>
+                    <h4>UI / UX Design</h4>
+                    <p>Designing meaningful and user-focused experiences is at the core of my creative process. With tools like Figma, Axure, and Balsamiq, I craft intuitive interfaces that balance visual appeal with usability. From low-fidelity wireframes to high-fidelity prototypes, I follow a user-centered approach that prioritizes accessibility, responsiveness, and seamless interaction. My goal is to turn concepts into designs that not only look great but also feel effortless to use.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p> I specialize in building clean, responsive, and interactive user interfaces using HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS. My frontend development approach combines performance, aesthetics, and usability to create smooth digital experiences across all devices. I focus on writing maintainable, scalable code while integrating the latest web technologies and design patterns to ensure cross-platform consistency and modern functionality.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>With a strong foundation in PHP, MySQL, and API development, I build robust and scalable backend systems that ensure efficient communication between the client and server. My backend solutions emphasize performance, security, and adaptability, enabling seamless data handling and integration. Whether it's designing a database schema or optimizing server logic, I aim to create backend architectures that support reliable, high-performing applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services secation //-->
+
+    <!-- Project secation -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-box"></div>
+    </section>
+    <!-- Project secation //-->
+
+    <!-- Contact secation -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm" action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Send Message" class="btn" onclick="sendMail()">
+            </div>
+        </form>
+    </section>
+    <!-- Contact secation //-->
+    
+
+    <!-- Footer secation -->
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://github.com/Hassan-Alzouri" target="_blank" class="icon"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/hassan-alzouri-2001b1324/" target="_blank" class="icon"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="mailto:Hassan-Alzouri@outlook.com" target="_blank" class="icon"><i class="bx bxl-gmail"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="copyright">Hassan Alzourei | All Right Reserved</p>
+    </footer>
+    <!-- Footer secation //-->
+
+
+</body>
+</html>
